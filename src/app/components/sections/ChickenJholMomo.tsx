@@ -1,0 +1,67 @@
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5, ease: 'easeOut' }
+};
+
+const ChickenJholMomo = () => {
+  return (
+    <motion.section 
+      className="py-16 bg-[var(--background)]"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="w-full max-w-[1280px] mx-auto px-4">
+        <motion.div 
+          className="flex flex-col md:flex-row items-center bg-gradient-to-r from-[var(--primary-green)] to-[var(--primary-red)] rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl"
+          whileHover={{ scale: 1.01 }}
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          {/* Text Section */}
+          <div className="md:w-1/2 p-10">
+            <motion.h2 
+              className="text-3xl font-bold text-white mb-4"
+              variants={fadeInUp}
+            >
+              Chicken Jhol Momo
+            </motion.h2>
+            <motion.p 
+              className="text-white mb-8 text-lg"
+              variants={fadeInUp}
+            >
+              Chicken Jhol Momo features soft steamed dumplings filled with seasoned chicken, served in a spicy, tangy sesame-tomato jhol broth, delivering comforting warmth and bold, authentic Nepali flavors in every bite.
+            </motion.p>
+          </div>
+          {/* Image Section - Lazy loaded, optimized quality */}
+          <motion.div 
+            className="md:w-1/2 relative h-80 md:h-[400px] w-full overflow-hidden"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.4 }}
+          >
+            <Image
+              src="https://res.cloudinary.com/dweqejpfk/image/upload/v1771594290/Chicken_Jhol_Momo_tzpbuh.webp"
+              alt="Chicken Jhol Momo - Nepalese dumpling soup with spicy broth"
+              fill
+              className="object-cover transition-transform duration-700 hover:scale-110"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+              quality={75}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+            />
+          </motion.div>
+        </motion.div>
+      </div>
+    </motion.section>
+  );
+};
+
+export default ChickenJholMomo;

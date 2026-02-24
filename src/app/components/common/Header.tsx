@@ -62,10 +62,10 @@ export default function Navbar() {
         </div>
 
         {/* ================= MOBILE TOP BAR ================= */}
-        <div className="md:hidden flex items-center justify-between">
+        <div className="md:hidden mx-auto flex items-center justify-between">
 
           {/* LOGO */}
-          <Link href="/">
+          <Link href="/" className="ml-40">
             <Image
               src="/logo.png"
               alt="Flavors of India Logo"

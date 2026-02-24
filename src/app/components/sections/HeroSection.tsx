@@ -40,10 +40,10 @@ const HeroSection = () => {
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
         />
         {/* Blur overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary-green)]/[0.15] to-[var(--primary-red)]/[0.15] backdrop-blur-md"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FF671F]/50 via-[#ffffff]/20 to-[#046A38]/50 backdrop-blur-md"></div>
       </div>
 
-      <div className="w-full max-w-[1280px] mx-auto px-4 relative z-10">
+      <div className="w-full max-w-[1280px]  mx-auto px-4 relative z-10">
         <motion.div 
           className="flex flex-col md:flex-row items-center"
           variants={staggerContainer}
@@ -101,7 +101,7 @@ const HeroSection = () => {
             >
               <div className="relative aspect-square max-w-md mx-auto">
                 <Image
-                  src="https://res.cloudinary.com/dweqejpfk/image/upload/v1771512767/hero_rh0eac.webp"
+                  src="https://res.cloudinary.com/dweqejpfk/image/upload/v1771946455/Orange_and_Green_Modern_Bold_Butter_Chicken_Indian_Food_Marketing_Instagram_Post_448_x_448_px_greyw3.png"
                   alt="Signature Butter Chicken dish with naan bread at Flavors of India restaurant"
                   fill
                   className="object-cover rounded-3xl shadow-2xl border-8 border-white/30 transition-transform duration-500 hover:scale-105"

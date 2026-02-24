@@ -190,7 +190,7 @@ const AboutPage = () => {
           <div className="w-full md:w-1/3">
             <div className="relative w-full aspect-[3/4] md:h-full">
               <Image
-                src="https://res.cloudinary.com/dweqejpfk/image/upload/v1771872100/ceo_weya6l.webp"
+                src="/ceo.png"
                 alt="Mr. Lal Singh Khadka - Founder and CEO of Flavors of India"
                 fill
                 className="object-cover object-top md:rounded-l-3xl rounded-t-3xl"

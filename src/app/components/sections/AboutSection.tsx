@@ -57,86 +57,104 @@ const AboutPage = () => {
       <main id="main-content" className="w-full max-w-[1280px] mx-auto px-4 py-8">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-r from-[var(--primary-green)] to-[var(--primary-red)] rounded-3xl overflow-hidden mb-16 px-4">
-         <div className="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
-  
-  {/* Left Content */}
-  <div className="w-full md:w-1/2 text-center md:text-left">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-      Flavors of India
-    </h1>
-    <p className="text-white text-base sm:text-lg mb-6 max-w-xl mx-auto md:mx-0">
-      Founded in 2001 by Mr. Lal Singh Khadka, Flavors of India brings 
-      authentic Indian and Nepali flavors crafted with tradition, passion, 
-      and quality ingredients — creating memorable dining experiences.
-    </p>
-  </div>
+          <div className="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
 
-  {/* Right Image */}
-  <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-    <div className="relative w-full max-w-md h-72 sm:h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
-      <Image
-        src="https://res.cloudinary.com/dweqejpfk/image/upload/v1771871500/Orange_and_Green_Modern_Bold_Butter_Chicken_Indian_Food_Marketing_Instagram_Post_448_x_384_px_kkpmjh.webp"
-        alt="Flavors of India restaurant logo and branding"
-        fill
-        className="object-cover"
-        sizes="(max-width: 768px) 100vw, 50vw"
-        quality={85}
-      />
-    </div>
-  </div>
+            {/* Left Content */}
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
+                Flavors of India
+              </h1>
+              <p className="text-white text-base sm:text-lg mb-6 max-w-xl mx-auto md:mx-0">
+                Founded in 2001 by Mr. Lal Singh Khadka, Flavors of India brings
+                authentic Indian and Nepali flavors crafted with tradition, passion,
+                and quality ingredients — creating memorable dining experiences.
+              </p>
+            </div>
 
-</div>
+            {/* Right Image */}
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+              <div className="relative w-full max-w-md h-72 sm:h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="https://res.cloudinary.com/dweqejpfk/image/upload/v1771871500/Orange_and_Green_Modern_Bold_Butter_Chicken_Indian_Food_Marketing_Instagram_Post_448_x_384_px_kkpmjh.webp"
+                  alt="Flavors of India restaurant logo and branding"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
+                />
+              </div>
+            </div>
+
+          </div>
         </section>
 
         {/* Our Story */}
-        <section className="py-16 mb-16">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[var(--dark-gray)] mb-4">Our Story</h2>
-              <div className="w-20 h-1 bg-[var(--primary-green)] mx-auto"></div>
+        <section className="py-12 md:py-16 mb-12 md:mb-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+
+            {/* Section Heading */}
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--dark-gray)] mb-4">
+                Our Story
+              </h2>
+              <div className="w-16 md:w-20 h-1 bg-[var(--primary-green)] mx-auto"></div>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
+
+            {/* Content Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+
+              {/* Image */}
+              <div className="w-full">
                 <Image
                   src="https://res.cloudinary.com/dweqejpfk/image/upload/v1771871831/Orange_and_Green_Modern_Bold_Butter_Chicken_Indian_Food_Marketing_Instagram_Post_448_x_384_px_472_x_314_px_rc4ala.webp"
                   alt="Our restaurant kitchen with traditional Indian cooking equipment"
                   width={600}
                   height={400}
-                  className="rounded-2xl shadow-lg"
+                  className="rounded-2xl shadow-lg w-full h-auto"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   loading="lazy"
                   quality={85}
                 />
               </div>
+
+              {/* Text Content */}
               <div>
-                <h3 className="text-2xl font-bold text-[var(--dark-gray)] mb-6">From Passion to Plate</h3>
-                <p className="text-[var(--text-secondary)] mb-6">
+                <h3 className="text-xl sm:text-2xl font-bold text-[var(--dark-gray)] mb-4 md:mb-6">
+                  From Passion to Plate
+                </h3>
+
+                <p className="text-sm sm:text-base text-[var(--text-secondary)] mb-4 md:mb-6 leading-relaxed">
                   Founded in 2001 by Mr. Lal Singh Khadka, Founder & Chief Executive Officer,
                   Flavors of India began with a passion to share authentic Indian and Nepali
                   cuisine with the community. What started as a humble culinary vision has grown
                   into a beloved dining destination known for its rich flavors and warm hospitality.
                 </p>
 
-                <p className="text-[var(--text-secondary)] mb-6">
+                <p className="text-sm sm:text-base text-[var(--text-secondary)] mb-4 md:mb-6 leading-relaxed">
                   For over two decades, we have remained committed to quality, tradition, and
                   excellence. Using fresh ingredients and aromatic spices, we prepare every dish
                   with care — creating memorable dining experiences that bring people together
                   through the true taste of home.
                 </p>
-                <div className="flex items-center mt-8">
-  <div className="mr-8">
-    <div className="text-3xl font-bold text-[var(--primary-green)]">2001</div>
-    <div className="text-[var(--text-secondary)]">Established</div>
-  </div>
-  <div className="mr-8">
-    <div className="text-3xl font-bold text-[var(--primary-green)]">20+</div>
-    <div className="text-[var(--text-secondary)]">Years of Excellence</div>
-  </div>
-  <div>
-    <div className="text-3xl font-bold text-[var(--primary-green)]">Authentic</div>
-    <div className="text-[var(--text-secondary)]">Indian & Nepali Flavors</div>
-  </div>
-</div>
+
+                {/* Stats */}
+                <div className="flex flex-wrap gap-6 sm:gap-8 mt-6 md:mt-8">
+                  <div>
+                    <div className="text-2xl sm:text-3xl font-bold text-[var(--primary-green)]">2001</div>
+                    <div className="text-sm sm:text-base text-[var(--text-secondary)]">Established</div>
+                  </div>
+
+                  <div>
+                    <div className="text-2xl sm:text-3xl font-bold text-[var(--primary-green)]">20+</div>
+                    <div className="text-sm sm:text-base text-[var(--text-secondary)]">Years of Excellence</div>
+                  </div>
+
+                  <div>
+                    <div className="text-2xl sm:text-3xl font-bold text-[var(--primary-green)]">Authentic</div>
+                    <div className="text-sm sm:text-base text-[var(--text-secondary)]">Indian & Nepali Flavors</div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>

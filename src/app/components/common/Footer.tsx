@@ -140,7 +140,7 @@ export default function Footer() {
           >
             <h3 className="text-lg font-bold mb-6 text-[var(--foreground)]">Quick Links</h3>
             <ul className="space-y-3">
-              {['/', '/menu', '/contact', '/about'].map((path) => (
+              {['/', '/menu', '/about', '/contact'].map((path) => (
                 <motion.li
                   key={path}
                   whileHover={{ x: 8 }}

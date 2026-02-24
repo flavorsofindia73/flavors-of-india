@@ -42,9 +42,9 @@ const items = [
   },
   {
     id: 5,
-    name: "Masala Naan",
+    name: "Butter Naan",
     price: "$4.79",
-    image: "https://res.cloudinary.com/dweqejpfk/image/upload/v1771511466/Orange_and_Green_Modern_Bold_Butter_Chicken_Indian_Food_Marketing_Instagram_Post_5_loibgs_w4cjaq.webp",
+    image: "https://res.cloudinary.com/dweqejpfk/image/upload/v1771916284/butter_naan_nfbbtd.webp",
     alt: "Fresh masala naan bread from tandoor oven",
     width: 640,
     height: 640

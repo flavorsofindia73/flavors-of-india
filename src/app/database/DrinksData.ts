@@ -1,11 +1,10 @@
 import { MenuItem } from "../types/types";
 import { optimizeCloudinaryUrl } from "../lib/optimizeCloudinaryUrl";
 
-
 export const drinks: MenuItem[] = [
   {
     id: 65,
-    name: "LASSI ( PLAIN/ SWTEET/ SALTED )",
+    name: "LASSI ( PLAIN / SWEET / SALTED )",
     description: "Traditional yogurt-based drink available in plain, sweet, or salted flavors.",
     price: 2.00,
     category: "Drinks",
@@ -131,7 +130,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 80,
+    id: 79,
     name: "MASALA TEA",
     description: "Aromatic tea brewed with Indian spices.",
     price: 2.00,
@@ -140,7 +139,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 81,
+    id: 80,
     name: "HOT LEMON TEA",
     description: "Warm tea served with lemon.",
     price: 1.50,
@@ -149,7 +148,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 82,
+    id: 81,
     name: "ICE LEMON TEA",
     description: "Chilled lemon tea served over ice.",
     price: 1.50,
@@ -158,7 +157,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 83,
+    id: 82,
     name: "COFFEE BLACK",
     description: "Strong brewed black coffee.",
     price: 1.50,
@@ -167,7 +166,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 84,
+    id: 83,
     name: "COFFEE WITH MILK",
     description: "Brewed coffee with milk.",
     price: 1.50,
@@ -176,8 +175,8 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 85,
-    name: "COKA / PEPSI / FANTA / SPRITE",
+    id: 84,
+    name: "COKE / PEPSI / FANTA / SPRITE",
     description: "Assorted carbonated soft drinks.",
     price: 1.50,
     category: "Drinks",
@@ -185,7 +184,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 86,
+    id: 85,
     name: "SODA / TONIC / DIET COKE",
     description: "Selection of mixers and diet beverages.",
     price: 1.75,
@@ -194,7 +193,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 87,
+    id: 86,
     name: "MINERAL WATER (100CL)",
     description: "Large bottle of mineral water.",
     price: 1.00,
@@ -203,7 +202,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 88,
+    id: 87,
     name: "MINERAL WATER (SMALL)",
     description: "Small bottle of mineral water.",
     price: 0.50,
@@ -212,7 +211,7 @@ export const drinks: MenuItem[] = [
     vegetarian: true
   },
   {
-    id: 89,
+    id: 88,
     name: "GINGER ALE",
     description: "Refreshing ginger-flavored soda.",
     price: 1.50,

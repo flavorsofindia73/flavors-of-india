@@ -76,7 +76,7 @@ const branchesData = [
   {
     name: "Third Branch",
     address: "#301-302, St.121 Battambang, Cambodia",
-    phones: ["+855 53 731 553", "+855 98 856 140"],
+    phones: ["012 302 770"],
     email: "foi.combodia@gmail.com"
   }
 ];

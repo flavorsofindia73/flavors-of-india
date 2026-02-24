@@ -1,0 +1,27 @@
+# Robots.txt for Flavors of India
+# https://flavorsofindia.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://flavorsofindia.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Allow all main pages
+Allow: /$
+Allow: /menu
+Allow: /about
+Allow: /contact
+
+# Block admin and private areas (if any)
+Disallow: /admin
+Disallow: /private
+Disallow: /*?*
+
+# Block common non-essential paths
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /api/

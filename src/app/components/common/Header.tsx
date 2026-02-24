@@ -65,7 +65,7 @@ export default function Navbar() {
         <div className="md:hidden mx-auto flex items-center justify-between">
 
           {/* LOGO */}
-          <Link href="/" className="ml-40">
+          <Link href="/" className="ml-20">
             <Image
               src="/logo.png"
               alt="Flavors of India Logo"

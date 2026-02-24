@@ -109,6 +109,7 @@ export default function RootLayout({
     <html lang="en"
       className={`light ${poppins.variable}`} suppressHydrationWarning>
       <head>
+      <link rel="icon" href="/logo.ico" />
         <link rel="canonical" href={siteUrl} />
         <script
           type="application/ld+json"

@@ -1,42 +1,42 @@
 @import "tailwindcss";
 
+/* ==============================
+   Root: Light Theme / Base Colors
+   ============================== */
 :root {
-  /* Brand Colors */
-  --brand-green: #316d39;       /* Primary green */
-  --brand-red: #e62e2d;         /* Primary red */
-  --brand-black: #040404;       /* Deep black */
-  --brand-cream: #fbfef7;       /* Light cream */
+  /* Flag Colors */
+  --brand-saffron: #FF671F;   /* Saffron */
+  --brand-white: #FFFFFF;     /* White */
+  --brand-green: #046A38;     /* Green */
+  --brand-black: #040404;     /* Black/Navy */
 
   /* Light Theme Variables */
-  --background: var(--brand-cream);
-  --foreground: var(--brand-black);
+  --background: var(--brand-white);
+  --foreground: var(--brand-black);       /* Main text */
+  --primary-saffron: var(--brand-saffron);
   --primary-green: var(--brand-green);
-  --primary-red: var(--brand-red);
-  --primary-black: var(--brand-black);
-  --primary-cream: var(--brand-cream);
-  --light-gray: #e8f0e1;
-  --medium-gray: #a1a1a1;
+  --primary-white: var(--brand-white);
+  --light-gray: #f5f5f5;
+  --medium-gray: #d1d5db;
   --dark-gray: #4b5563;
-  --white: #ffffff;
-  --black: var(--brand-black);
-  --card-bg: #ffffff;
+  --card-bg: var(--brand-white);
   --border: var(--brand-green);
-  --text-secondary: #6b7280;
-  --accent-hover: var(--brand-red);
+  --text-secondary: var(--brand-saffron);
+  --accent-hover: var(--brand-saffron);
 }
 
+/* ==============================
+   Theme Inline (Tailwind Integration)
+   ============================== */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary-saffron: var(--primary-saffron);
   --color-primary-green: var(--primary-green);
-  --color-primary-red: var(--primary-red);
-  --color-primary-black: var(--primary-black);
-  --color-primary-cream: var(--primary-cream);
+  --color-primary-white: var(--primary-white);
   --color-light-gray: var(--light-gray);
   --color-medium-gray: var(--medium-gray);
   --color-dark-gray: var(--dark-gray);
-  --color-white: var(--white);
-  --color-black: var(--black);
   --color-card-bg: var(--card-bg);
   --color-border: var(--border);
   --color-text-secondary: var(--text-secondary);
@@ -44,23 +44,27 @@
   --font-sans: var(--font-poppins), sans-serif;
 }
 
+/* ==============================
+   Dark Theme Overrides
+   ============================== */
 .dark {
-  /* Dark Theme Variables */
-  --background: var(--brand-black);
-  --foreground: var(--brand-cream);
-  --card-bg: #121212;
-  --border: var(--brand-green);
-  --text-secondary: #a1a1a1;
-  --light-gray: #2d2d2d;
-  --medium-gray: #9ca3af;
-  --dark-gray: #d4d1d1;
+  --background: var(--brand-black);        /* Dark background */
+  --foreground: var(--brand-white);        /* Main text */
+  --card-bg: #1e1e1e;                       /* Card slightly lighter than black */
+  --border: var(--brand-green);             /* Green borders */
+  --text-secondary: var(--brand-saffron);  /* Saffron secondary text */
+  --light-gray: #4b4b4b;                    /* Readable light gray */
+  --medium-gray: #9ca3af;                   /* Medium gray for muted text */
+  --dark-gray: #d4d1d1;                     /* Dark gray for subtle text */
+  --primary-saffron: var(--brand-saffron);
   --primary-green: var(--brand-green);
-  --primary-red: var(--brand-red);
-  --primary-black: var(--brand-black);
-  --primary-cream: var(--brand-cream);
-  --accent-hover: var(--brand-red);
+  --primary-white: var(--brand-white);
+  --accent-hover: var(--brand-saffron);
 }
 
+/* ==============================
+   Global Styles
+   ============================== */
 body {
   background: var(--background);
   color: var(--foreground);
@@ -76,82 +80,38 @@ body {
   scrollbar-width: none;
 }
 
-/* Custom Animations */
+/* ==============================
+   Custom Animations
+   ============================== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInUp {
-  from { 
-    opacity: 0; 
-    transform: translateY(30px); 
-  }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInDown {
-  from { 
-    opacity: 0; 
-    transform: translateY(-30px); 
-  }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
-  }
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes scaleIn {
-  from { 
-    opacity: 0; 
-    transform: scale(0.9); 
-  }
-  to { 
-    opacity: 1; 
-    transform: scale(1); 
-  }
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
 
-.animate-fadeIn {
-  animation: fadeIn 0.3s ease-out forwards;
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
-  opacity: 0;
-}
-
-.animate-fade-in-down {
-  animation: fadeInDown 0.6s ease-out forwards;
-  opacity: 0;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.4s ease-out forwards;
-  opacity: 0;
-}
+/* Animation Classes */
+.animate-fadeIn { animation: fadeIn 0.3s ease-out forwards; }
+.animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+.animate-fade-in-down { animation: fadeInDown 0.6s ease-out forwards; opacity: 0; }
+.animate-scale-in { animation: scaleIn 0.4s ease-out forwards; opacity: 0; }
 
 /* Animation Delays */
-.animation-delay-100 {
-  animation-delay: 100ms;
-}
-
-.animation-delay-200 {
-  animation-delay: 200ms;
-}
-
-.animation-delay-300 {
-  animation-delay: 300ms;
-}
-
-.animation-delay-400 {
-  animation-delay: 400ms;
-}
-
-.animation-delay-500 {
-  animation-delay: 500ms;
-}
-
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-500 { animation-delay: 500ms; }

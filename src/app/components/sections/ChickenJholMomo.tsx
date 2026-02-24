@@ -10,7 +10,7 @@ const fadeInUp = {
 const ChickenJholMomo = () => {
   return (
     <motion.section
-      className="py-16 bg-gradient-to-r from-[#e62e2d] via-[#ffffff] to-[#347338]"
+      className="py-16 bg-gradient-to-r from-[#FF671F] via-[#ffffff] to-[#046A38]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-50px" }}

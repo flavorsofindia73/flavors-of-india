@@ -72,7 +72,7 @@ const PopularItems = () => {
 
   return (
     <motion.section 
-      className="py-16 bg-gradient-to-l from-[#e62e2d] via-[#ffffff] to-[#347338]"
+      className="py-16 bg-gradient-to-l from-[#FF671F] via-[#ffffff] to-[#046A38]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -83,7 +83,7 @@ const PopularItems = () => {
         {/* Header */}
         <div className="flex justify-between items-center mb-10">
           <motion.h2 
-            className="text-3xl font-bold text-gray-700"
+            className="text-3xl font-bold"
             variants={fadeInUp}
             initial="initial"
             whileInView="animate"

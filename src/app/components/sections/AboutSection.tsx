@@ -46,13 +46,13 @@ const AboutPage = () => {
     {
       name: 'Flavors of India – Third Branch',
       address: '#301-302, St.121 Battambang, Cambodia',
-      phone: ["+855 53 731 553", "+855 98 856 140"],
+      phone: ["012 302 770"],
       hours: 'Mon–Sun | 10:30 AM – 11:00 PM',
     },
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-r from-[#e62e2d] via-[#ffffff] to-[#347338]">
       <Header />
       <main id="main-content" className="w-full max-w-[1280px] mx-auto px-4 py-8">
         {/* Hero Section */}
@@ -89,12 +89,12 @@ const AboutPage = () => {
         </section>
 
         {/* Our Story */}
-        <section className="py-12 md:py-16 mb-12 md:mb-16">
+        <section className="py-12 md:py-16 mb-12 md:mb-16 ">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
             {/* Section Heading */}
             <div className="text-center mb-10 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--dark-gray)] mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-700 mb-4">
                 Our Story
               </h2>
               <div className="w-16 md:w-20 h-1 bg-[var(--primary-green)] mx-auto"></div>
@@ -119,18 +119,18 @@ const AboutPage = () => {
 
               {/* Text Content */}
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-[var(--dark-gray)] mb-4 md:mb-6">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-700 mb-4 md:mb-6">
                   From Passion to Plate
                 </h3>
 
-                <p className="text-sm sm:text-base text-[var(--text-secondary)] mb-4 md:mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-black mb-4 md:mb-6 leading-relaxed">
                   Founded in 2001 by Mr. Lal Singh Khadka, Founder & Chief Executive Officer,
                   Flavors of India began with a passion to share authentic Indian and Nepali
                   cuisine with the community. What started as a humble culinary vision has grown
                   into a beloved dining destination known for its rich flavors and warm hospitality.
                 </p>
 
-                <p className="text-sm sm:text-base text-[var(--text-secondary)] mb-4 md:mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-black mb-4 md:mb-6 leading-relaxed">
                   For over two decades, we have remained committed to quality, tradition, and
                   excellence. Using fresh ingredients and aromatic spices, we prepare every dish
                   with care — creating memorable dining experiences that bring people together
@@ -141,17 +141,17 @@ const AboutPage = () => {
                 <div className="flex flex-wrap gap-6 sm:gap-8 mt-6 md:mt-8">
                   <div>
                     <div className="text-2xl sm:text-3xl font-bold text-[var(--primary-green)]">2001</div>
-                    <div className="text-sm sm:text-base text-[var(--text-secondary)]">Established</div>
+                    <div className="text-sm sm:text-base text-black">Established</div>
                   </div>
 
                   <div>
                     <div className="text-2xl sm:text-3xl font-bold text-[var(--primary-green)]">20+</div>
-                    <div className="text-sm sm:text-base text-[var(--text-secondary)]">Years of Excellence</div>
+                    <div className="text-sm sm:text-base text-black">Years of Excellence</div>
                   </div>
 
                   <div>
                     <div className="text-2xl sm:text-3xl font-bold text-[var(--primary-green)]">Authentic</div>
-                    <div className="text-sm sm:text-base text-[var(--text-secondary)]">Indian & Nepali Flavors</div>
+                    <div className="text-sm sm:text-base text-black">Indian & Nepali Flavors</div>
                   </div>
                 </div>
 
@@ -233,7 +233,7 @@ const AboutPage = () => {
         {/* Our Branches */}
         <section id="branches" className="py-16 mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">Our Branches</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">Our Branches</h2>
             <div className="w-20 h-1 bg-[var(--primary-green)] mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 gap-8">
@@ -291,7 +291,7 @@ const AboutPage = () => {
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
               <div className="text-center px-4">
                 <p className="text-white text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide">
-                  Serving Authentic Taste Since 2015
+                  Serving Authentic Taste Since 2001
                 </p>
               </div>
             </div>

@@ -119,7 +119,7 @@ const ContactPage = () => {
     },
     {
       icon: (
-        <svg className="w-6 h-6 text-[var(--primary-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" w-6 h-6 text-[var(--primary-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
@@ -129,11 +129,11 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-r from-[#e62e2d] via-[#ffffff] to-[#347338]">
       <Header />
       <main className="w-full max-w-[1280px] mx-auto px-4 py-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[var(--dark-gray)] mb-4">Contact Us</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-700 mb-4">Contact Us</h1>
           <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
             Have questions or feedback? Reach out to us and our team will get back to you as soon as possible.
           </p>
@@ -271,7 +271,7 @@ const ContactPage = () => {
         {/* Find Our Branches Section */}
         <section className="py-16 mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">Find Our Branches</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">Find Our Branches</h2>
             <div className="w-20 h-1 bg-[var(--primary-green)] mx-auto"></div>
           </div>
           <div className="grid grid-cols-1  gap-8">

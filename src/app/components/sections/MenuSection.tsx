@@ -21,7 +21,7 @@ const staggerContainer = {
 
 export default function MenuPage() {
   return (
-    <div className="min-h-screen bg-[var(--background)]">
+    <div className="min-h-screen bg-gradient-to-r from-[#e62e2d] via-[#ffffff] to-[#347338]">
       <Navbar />
       <motion.main 
         className="w-full max-w-[1280px] mx-auto px-4 py-8"
@@ -36,7 +36,7 @@ export default function MenuPage() {
           initial="initial"
           animate="animate"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-700  mb-4">
             Our Menu
           </h1>
           <p className="text-[var(--text-secondary)] text-lg max-w-2xl mx-auto">

@@ -178,15 +178,14 @@ export default function CategoryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--background)]">
+    <div className="min-h-screen bg-gradient-to-l from-[#e62e2d] via-[#ffffff] to-[#347338]">
       <Header />
 
       <main className="w-full max-w-[1280px] mx-auto px-4 py-8">
         <div className="mb-8">
           <Link
             href="/menu"
-            className="inline-flex items-center text-[var(--primary-green)]
-              font-medium hover:text-[var(--primary-red)] transition-colors mb-6"
+            className="inline-flex items-center mb-6"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -194,7 +193,7 @@ export default function CategoryPage() {
             Back to Menu
           </Link>
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-700 mb-4">
               {category.title}
             </h1>
             <p className="text-[var(--text-secondary)] text-lg max-w-2xl mx-auto">

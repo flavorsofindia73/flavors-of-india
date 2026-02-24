@@ -119,7 +119,7 @@ export default function Footer() {
             <div className="logo mb-4">
               <motion.div whileHover={{ scale: 1.05 }}>
                 <Link href="/" className="text-[var(--primary-green)] font-bold text-xl md:text-2xl flex items-center gap-2 transition-all duration-300">
-                  <Image src="/logo.png" alt="Flavors of India Logo" width={180} height={120} className="inline-block" />
+                  <Image src="/logo.png" alt="Flavors of India Logo" width={200} height={150} className="inline-block" />
                 </Link>
               </motion.div>
             </div>

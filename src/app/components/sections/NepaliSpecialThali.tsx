@@ -10,7 +10,7 @@ const fadeInUp = {
 const NepaliSpecialThali = () => {
   return (
     <motion.section
-      className="py-16 bg-[var(--light-gray)]"
+      className="py-16 bg-gradient-to-l from-[#e62e2d] via-[#ffffff] to-[#347338]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-50px" }}

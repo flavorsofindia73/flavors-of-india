@@ -129,7 +129,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#e62e2d] via-[#ffffff] to-[#347338]">
+    <div className="min-h-screen bg-gradient-to-r from-[#FF671F] via-[#ffffff] to-[#046A38]">
       <Header />
       <main className="w-full max-w-[1280px] mx-auto px-4 py-8">
         <div className="text-center mb-12">
